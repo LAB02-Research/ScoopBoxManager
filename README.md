@@ -26,7 +26,7 @@ For those that aren't C# programmers, or if you want an easy way to configure yo
 
 ![Interface](https://raw.githubusercontent.com/LAB02-Research/ScoopBoxManager/main/images/main_interface.png)
 
-It should be pretty self-explanatory, but I'll expand on some parts:
+It should be pretty self-explanatory, and you can find more info on the various settings in the [ScoopBox readme](https://github.com/hasan-hasanov/ScoopBox#how-scoopbox-works), but I'll expand on some parts:
 
 ### General configuration
 
