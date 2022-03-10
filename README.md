@@ -10,7 +10,7 @@
 
 # ScoopBox Manager
 
-ScoopBox Manager is a Windows-based application to prepare and launch [Windows Sandbox](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-sandbox/windows-sandbox-overview) instances. developed in .NET 6.
+ScoopBox Manager is a Windows-based application to prepare and launch [Windows Sandbox](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-sandbox/windows-sandbox-overview) instances, developed in .NET 6.
 
 Click [here](https://github.com/LAB02-Research/ScoopBoxManager/releases/latest/download/ScoopBoxManager.zip) to download the latest release.
 
