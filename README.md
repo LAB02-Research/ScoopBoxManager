@@ -20,9 +20,9 @@ Click [here](https://github.com/LAB02-Research/ScoopBoxManager/releases/latest/d
 
 That's also a bit of a setback: if you need some applications installed for your tests, you'd have to reinstall them every time you launch a new sandbox. Or what if you want to access a local folder, for instance your application's debug output path?
 
-[@hasan-hasanov](https://github.com/hasan-hasanov) created a perfect library to deal with that; [ScoopBox](https://github.com/hasan-hasanov/ScoopBox). It allows a developer to configure certain settings, and have the sandbox install predefined applications through a package manager like [Chocolatey](https://chocolatey.org/).
+[@hasan-hasanov](https://github.com/hasan-hasanov) created a perfect library to deal with that; [ScoopBox](https://github.com/hasan-hasanov/ScoopBox). It allows a developer to configure certain settings, and have the sandbox install predefined applications through the package managers [Scoop](https://scoop.sh) and [Chocolatey](https://chocolatey.org/).
 
-For those that aren't C# programmers, or if you want an easy way to configure your sandboxes (like me), I built a small graphical interface around ScoopBox:
+For those that aren't C# programmers, or if you want an easy way to configure your sandboxes (like me), I built a small graphical interface around [ScoopBox](https://github.com/hasan-hasanov/ScoopBox):
 
 ![Interface](https://raw.githubusercontent.com/LAB02-Research/ScoopBoxManager/main/images/main_interface.png)
 
@@ -34,7 +34,7 @@ The defaults are fine, but you can for instance disable networking to see how yo
 
 ### Optional configuration
 
-These are configured by ScoopBox, so there's usually no reason to change these.
+These are configured by [ScoopBox](https://github.com/hasan-hasanov/ScoopBox), so there's usually no reason to change these.
 
 ### Mapped folders
 
@@ -42,7 +42,7 @@ These are local folders that will show up in your sandbox, optionally readonly f
 
 ### Applications
 
-A list of packages that will be installed. You can define which package manager per package; scoop or chocolatey. Please note that you need networking enabled for this, and depending on which and the amount of packages, it might take a few moments before everything's installed.
+A list of packages that will be installed. You can define which package manager per package; [Scoop](https://scoop.sh) or [Chocolatey](https://chocolatey.org/). Please note that you need networking enabled for this, and depending on which and the amount of packages, it might take a few moments before everything's installed.
 
 ### Storage
 
@@ -50,7 +50,7 @@ You can use the two buttons on the bottom-right to store and load your configura
 
 ## Logging
 
-ScoopBox will write logfiles to the desktop of your sandbox. They'll contain info on what the package managers did, so if something's not installing, check those first.
+[ScoopBox](https://github.com/hasan-hasanov/ScoopBox) will write logfiles to the desktop of your sandbox. They'll contain info on what the package managers did, so if something's not installing, check those first.
 
 ---
 
