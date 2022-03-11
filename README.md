@@ -16,9 +16,17 @@ Click [here](https://github.com/LAB02-Research/ScoopBoxManager/releases/latest/d
 
 ----
 
+Before starting, make sure you have [Windows Sandbox](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-sandbox/windows-sandbox-overview) enabled. For more info [consult the docs](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-sandbox/windows-sandbox-overview#installation), or you can use this PS script:
+
+```powershell
+Enable-WindowsOptionalFeature -FeatureName "Containers-DisposableClientVM" -All -Online
+```
+
+----
+
 [Windows Sandbox](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-sandbox/windows-sandbox-overview) is a way to launch applications, visit websites, test code, etc. within a secure and clean environment. This environment is a basic copy of your OS, running as a virtual machine. As soon as you close the sandbox, everything you've done and changed will be gone. Open a new one, and you'll get a fresh new copy.
 
-That's also a bit of a setback: if you need some applications installed for your tests, you'd have to reinstall them every time you launch a new sandbox. Or what if you want to access a local folder, for instance your application's debug output path?
+That's also a bit of a setback: if you need some applications or frameworks installed for your tests, you'd have to reinstall them every time you launch a new sandbox. Or what if you want to access a local folder, for instance your application's debug output path?
 
 [@hasan-hasanov](https://github.com/hasan-hasanov) created a perfect library to deal with that; [ScoopBox](https://github.com/hasan-hasanov/ScoopBox). It allows a developer to configure certain settings, and have the sandbox install predefined applications through the package managers [Scoop](https://scoop.sh) and [Chocolatey](https://chocolatey.org/).
 
@@ -30,7 +38,7 @@ It should be pretty self-explanatory, and you can find more info on the various 
 
 ### General configuration
 
-The defaults are fine, but you can for instance disable networking to see how your applications handles that. When setting memory, 0 means the default.
+The defaults are fine, but you can for instance disable networking to see how your applications handles it. When setting memory, 0 means the default.
 
 ### Optional configuration
 
@@ -38,7 +46,7 @@ These are configured by [ScoopBox](https://github.com/hasan-hasanov/ScoopBox), s
 
 ### Mapped folders
 
-These are local folders that will show up in your sandbox, optionally readonly for added safety.
+These are local folders that will show up in your sandbox, optionally readonly for added safety if you're testing potential malware.
 
 ### Applications
 
@@ -46,18 +54,12 @@ A list of packages that will be installed. You can define which package manager 
 
 ### Storage
 
-You can use the two buttons on the bottom-right to store and load your configuration. Whenever you launch a sandbox, those settings are then stored as the default (and loaded when you restart). So if it's just one set of config you use, you don't have to do anything except set them once.
+You can use the two buttons on the bottom-right to store and load multiple configurations. Whenever you launch a sandbox, the active settings are stored as the default (and loaded when you restart). So if it's just one set of config you use, you don't have to use them.
 
-## Logging
+### Logging
 
-[ScoopBox](https://github.com/hasan-hasanov/ScoopBox) will write logfiles to the desktop of your sandbox. They'll contain info on what the package managers did, so if something's not installing, check those first.
+[ScoopBox](https://github.com/hasan-hasanov/ScoopBox) writes logfiles to the desktop of your sandbox. They contain info on what the package managers did, so if something's not installing, check those first.
 
 ---
-
-Before starting, make sure you have Windows Sandbox enabled. Please see [this documentation](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-sandbox/windows-sandbox-overview#installation), or you can use this PS script:
-
-```powershell
-Enable-WindowsOptionalFeature -FeatureName "Containers-DisposableClientVM" -All -Online
-```
 
 If you need a cli tool to launch sandboxes, [@hasan-hasanov](https://github.com/hasan-hasanov) built that as well: [Boxer](https://github.com/hasan-hasanov/Boxer)
