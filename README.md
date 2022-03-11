@@ -16,7 +16,7 @@ Click [here](https://github.com/LAB02-Research/ScoopBoxManager/releases/latest/d
 
 ----
 
-[Windows Sandbox](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-sandbox/windows-sandbox-overview) is a way to launch applications, visit websites, test code et cetera within a secure and clean environment. This environment is a basic copy of your OS, running as a virtual machine. As soon as you close the sandbox, everything you've done and changed will be gone. Open a new one, and you'll get a fresh new copy.
+[Windows Sandbox](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-sandbox/windows-sandbox-overview) is a way to launch applications, visit websites, test code, etc. within a secure and clean environment. This environment is a basic copy of your OS, running as a virtual machine. As soon as you close the sandbox, everything you've done and changed will be gone. Open a new one, and you'll get a fresh new copy.
 
 That's also a bit of a setback: if you need some applications installed for your tests, you'd have to reinstall them every time you launch a new sandbox. Or what if you want to access a local folder, for instance your application's debug output path?
 
