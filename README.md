@@ -16,7 +16,7 @@ Click [here](https://github.com/LAB02-Research/ScoopBoxManager/releases/latest/d
 
 ----
 
-Before starting, make sure you have [Windows Sandbox](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-sandbox/windows-sandbox-overview) enabled. For more info [consult the docs](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-sandbox/windows-sandbox-overview#installation), or you can use this PS script:
+Before starting, make sure you have [Windows Sandbox](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-sandbox/windows-sandbox-overview) enabled. For more info [consult the docs](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-sandbox/windows-sandbox-overview#installation), or use this PS script:
 
 ```powershell
 Enable-WindowsOptionalFeature -FeatureName "Containers-DisposableClientVM" -All -Online
