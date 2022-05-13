@@ -7,7 +7,7 @@
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
     <ApplicationIcon>sbm.ico</ApplicationIcon>
-    <Version>2022.3.10</Version>
+    <Version>2022.5.13</Version>
     <Authors>LAB02 Research</Authors>
     <Description>Graphical interface for @hasan-hasanov's great ScoopBox, which in turn uses Windows' (also great) new Sandbox feature.</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>

@@ -155,7 +155,7 @@ namespace ScoopBoxManager.Forms
                 var scoop = appSettings.ConvertToScoopPackageManagerScript();
 
                 // check for conflicting settings
-                if (options.Networking == NetworkingOptions.Disable && (choco.Applications.Any() || scoop.Applications.Any()))
+                if (choco != null && scoop != null && options.Networking == NetworkingOptions.Disable && (choco.Applications.Any() || scoop.Applications.Any()))
                 {
                     // without networking, no packages will get downloaded ..
                     var q = MessageBox.Show("You've disabled networking, but added packages. They won't be able to download.\r\n\r\nAre you sure you want to continue?", "ScoopBoxManager", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);

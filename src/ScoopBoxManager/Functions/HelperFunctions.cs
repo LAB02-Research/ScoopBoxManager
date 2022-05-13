@@ -16,10 +16,7 @@ namespace ScoopBoxManager.Functions
         /// <param name="url"></param>
         internal static void LaunchUrl(string url)
         {
-            using (_ = Process.Start(new ProcessStartInfo(url) { UseShellExecute = true }))
-            {
-                //
-            }
+            using (_ = Process.Start(new ProcessStartInfo(url) { UseShellExecute = true })) { }
         }
     }
 }
